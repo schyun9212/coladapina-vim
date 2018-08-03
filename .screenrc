@@ -1,0 +1,27 @@
+# terminfo and termcap for nice 256 color terminal
+# allow bold colors - necessary for some reason
+attrcolor b ".I"
+# tell screen how to set colors. AB = background, AF=foreground
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+# erase background with current bg color
+defbce "on"
+
+# screen version 3.09.15 or upper version
+vbell off
+defscrollback 20000
+
+# Change window with Alt + j, k
+bindkey j prev
+bindkey k next
+
+# Automatically detach on hangup
+autodetach on
+
+# Change statusline
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{ wk}%-w%{= kG}%n %t%{ kw}%+w %=%{ kB} %Y-%m-%d, %C %A "
+
+# Refresh screen at vi exit
+altscreen on
+
