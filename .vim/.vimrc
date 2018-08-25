@@ -11,6 +11,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdtree'		"tree explorer
 Plugin 'airblade/vim-gitgutter'		"git diff
 Plugin 'vim-syntastic/syntastic'	"syntax checking
+Plugin 'flazz/vim-colorschemes'		"colorscheme bundle
+
 
 call vundle#end()            		" required
 filetype plugin indent on    		" required
@@ -25,7 +27,7 @@ set autoindent " automatic indent
 set cindent " indent for C language
 
 " ColorScheme
-colorscheme jellybeans
+colorscheme molokai
 
 " Basic Settings
 set nu
