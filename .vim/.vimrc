@@ -27,6 +27,7 @@ set autoindent " automatic indent
 set cindent " indent for C language
 
 " ColorScheme
+set t_Co=256						"setting to use colorscheme
 colorscheme molokai
 
 " Basic Settings
