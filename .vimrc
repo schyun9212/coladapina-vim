@@ -27,8 +27,10 @@ set autoindent " automatic indent
 set cindent " indent for C language
 
 " ColorScheme
-set t_Co=256						"setting to use colorscheme
-colorscheme molokai
+set term=screen-256color "setting to use colorscheme in Windows10 bash
+set t_Co=256 "setting to use colorscheme
+set background=dark
+colorscheme gruvbox
 
 " Basic Settings
 set nu
