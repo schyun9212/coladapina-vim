@@ -38,6 +38,9 @@ set shiftwidth=4 " set auto indent blank length
 set ts=4 " tab width
 set hls " search highlighting
 set showmatch " show bracket pair
+set incsearch " incremental search
+set ignorecase " ignore case sensitive
+set smartcase " use case search if caps used
 
 " Key Mapping
 map <F3> :NERDTree<CR>
