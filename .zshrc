@@ -104,6 +104,18 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+## enable color support of ls and also add handy aliases
+#if [ -x /usr/bin/dircolors ]; then
+#    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+#    alias ls='ls --color=auto'
+#    #alias dir='dir --color=auto'
+#    #alias vdir='vdir --color=auto'
+#
+#    alias grep='grep --color=auto'
+#    alias fgrep='fgrep --color=auto'
+#    alias egrep='egrep --color=auto'
+#fi
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -115,3 +127,20 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 if which pyenv >/dev/null; then
   eval "$(pyenv init -)"
 fi
+
+# settings for tmux
+export TERM=xterm-256color
+alias tmux="tmux -2"
+
+# settings for windows 10 bash screen
+export SCREENDIR=$HOME/.screen
+
+# OPAM configuration
+. /home/rupiath/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+#export LS_COLORS="ow=01;36;40"
+# di = directory, ow = other writable directory(o+w), tw = sticky and other writable directory(+t, o+w)
+LS_COLORS="di=00;34;40:ow=00;34;40"
+LS_COLORS+=":*.ml=00;97"
+
+export LS_COLORS

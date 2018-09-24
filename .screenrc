@@ -25,3 +25,5 @@ hardstatus string "%{ wk}%-w%{= kG}%n %t%{ kw}%+w %=%{ kB} %Y-%m-%d, %C %A "
 # Refresh screen at vi exit
 altscreen on
 
+deflogin off
+
