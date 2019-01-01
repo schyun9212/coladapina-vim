@@ -1,6 +1,5 @@
 " Vundle PlugIn
 set nocompatible              		" be iMproved, required
-filetype off                  		" required
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -27,10 +26,9 @@ set autoindent " automatic indent
 set cindent " indent for C language
 
 " ColorScheme
-set term=screen-256color "setting to use colorscheme in Windows10 bash
 set t_Co=256 "setting to use colorscheme
 set background=dark
-colorscheme gruvbox
+colorscheme seoul 
 
 " Basic Settings
 set nu
@@ -42,5 +40,6 @@ set incsearch " incremental search
 set ignorecase " ignore case sensitive
 set smartcase " use case search if caps used
 
+set backspace=indent,eol,start
 " Key Mapping
 map <F3> :NERDTree<CR>
